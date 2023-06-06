@@ -1,3 +1,5 @@
+using DevicesSystem.PresentationLayer;
+
 namespace DevicesSystem
 {
     public class Program
@@ -8,6 +10,11 @@ namespace DevicesSystem
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddApplicationServices();
+
+            builder.Services.AddRepoServices();
+
 
             var app = builder.Build();
 
@@ -21,7 +28,7 @@ namespace DevicesSystem
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            
             app.UseRouting();
 
             app.UseAuthorization();

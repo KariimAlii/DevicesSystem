@@ -12,5 +12,6 @@ namespace DevicesSystem.CoreLayer
         public string Name { get; set; } = String.Empty;
         public DateOnly AcquisitionDate {get;set;}
         public string Memo { get; set; }
+        public ICollection<DeviceProperties> DeviceProperties { get; set; } = new HashSet<DeviceProperties>();
     }
 }

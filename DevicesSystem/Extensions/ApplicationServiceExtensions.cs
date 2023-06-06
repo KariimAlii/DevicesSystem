@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using DevicesSystem.CoreLayer;
-namespace DevicesSystem.PresentationLayer.Extensions
+namespace DevicesSystem.PresentationLayer
 {
     public static class ApplicationServiceExtensions
     {

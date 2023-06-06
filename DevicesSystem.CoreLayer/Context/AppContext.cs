@@ -12,15 +12,15 @@ namespace DevicesSystem.CoreLayer
     {
         // Dependency Injection Constructor
         public AppDbContext(DbContextOptions options) : base(options) { }
-        public virtual DbSet<Category> Categories { get; set; }
-        public virtual DbSet<Device> Devices { get; set; }
-        public virtual DbSet<Property> Properties { get; set; }
-        public virtual DbSet<User> Users { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Device> Devices { get; set; }
+        public DbSet<Property> Properties { get; set; }
+        public DbSet<User> Users { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            //modelBuilder.Entity<StudentCourse>()
-            //   .HasKey(c => new { c.Student_Id, c.Course_Id });
+            modelBuilder.Entity<DeviceProperties>()
+               .HasKey(d => new { d.Category_Id, d.Device_Id,d.Property_Id,d.User_Id });
         }
     }
 }

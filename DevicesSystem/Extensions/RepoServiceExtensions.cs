@@ -1,6 +1,6 @@
 ﻿using DevicesSystem.DataAccessLayer;
 using Microsoft.EntityFrameworkCore;
-namespace DevicesSystem.PresentationLayer.Extensions
+namespace DevicesSystem.PresentationLayer
 {
     public static class RepoServiceExtensions
     {
