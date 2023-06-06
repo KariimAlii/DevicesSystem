@@ -6,11 +6,11 @@ namespace DevicesSystem.PresentationLayer.Extensions
     {
         public static IServiceCollection AddRepoServices(this IServiceCollection services)
         {
-            services.AddScoped<ICategoryRepo, CategoryRepo>;
-            services.AddScoped<IDeviceRepo, DeviceRepo>;
-            services.AddScoped<IPropertyRepo, PropertyRepo>;
-            services.AddScoped<IUserRepo, UserRepo>;
-            services.AddScoped<IUnitOfWork, UnitOfWork>;
+            services.AddScoped<ICategoryRepo, CategoryRepo>();
+            services.AddScoped<IDeviceRepo, DeviceRepo>();
+            services.AddScoped<IPropertyRepo, PropertyRepo>();
+            services.AddScoped<IUserRepo, UserRepo>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             return services;
         }
     }

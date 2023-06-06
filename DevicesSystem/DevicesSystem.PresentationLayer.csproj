@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DevicesSystem.BussinessLayer\DevicesSystem.BussinessLayer.csproj" />
     <ProjectReference Include="..\DevicesSystem.CoreLayer\DevicesSystem.CoreLayer.csproj" />
+    <ProjectReference Include="..\DevicesSystem.DataAccessLayer\DevicesSystem.DataAccessLayer.csproj" />
   </ItemGroup>
 
 </Project>
